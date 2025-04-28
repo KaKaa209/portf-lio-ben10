@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfólio Ben 10</title>
+</head>
+
+<body>
+  <div class="background-galaxy">
+    <header class="container text-center py-4">
+      <img src="imagens/ben ten foto de perfil.jpg" alt="avatar do Ben" class="rounded-5 border border-success border-5" width="175" height="175">
+      <p class="lead">Meu nome é Ben Tennyson</p>
+      <h1>Eu sou o MAIOR herói do universo!</h1>
+      <p>Eu sou Ben Tennyson, um herói famoso que já salvou a galáxia várias vezes com o Omnitrix, um relógio que me
+        transforma em aliens!</p>
+      <p>Minhas Habilidades</p>
+      <div>
+        <p class="badge bg-success">Bom combate corpo a corpo</p>
+        <p class="badge bg-success">Tenho um ótimo humor!</p>
+        <p class="badge bg-success">Sou conhecido por ter uma enorme coragem!</p>
+        <p class="badge bg-success">Minha cor favorita é verde</p>
+        <div class="mt-4">
+          <button id="transformarBtn" class="btn btn-success btn-lg">Transformar!</button>
+        </div>
+        
+      </div>
+    </header>
+
+    <main class="container">
+      <h2 class="text-center mb-4">Meus vilões</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card card-ben">
+            <img src="imagens/ben vs vilgax.png" class="card-img-top" alt="Ben lutando contra Vilgax">
+            <div class="card-body">
+              <p class="card-text">Esse é Vilgax, um conquistador alienígena obcecado por roubar meu Omnitrix pra dominar o universo. Ele usa força bruta e planos que nunca funcionam comigo.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <div class="card card-ben">
+            <img src="imagens/albedo 3.png" class="card-img-top" alt="Albedo">
+            <div class="card-body">
+              <p class="card-text">O nome dele é Albedo, ele é tipo uma versão minha, mas com um toque de vilão. Ele é um Galvan que ficou preso na minha forma humana por causa de um Omnitrix pirata, e isso o deixou bem irritado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <h2 class="text-center my-5">Minhas Transformações</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card card-ben">
+            <img src="imagens/chama.png" class="card-img-top" alt="Chama">
+            <div class="card-body">
+              <h5 class="card-title">Chama</h5>
+              <p class="card-text">Um alien de fogo com poderes de pirocinese, resistente ao calor extremo e ataques de fogo!</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <div class="card card-ben">
+            <img src="imagens/diamante.png" class="card-img-top" alt="Diamante">
+            <div class="card-body">
+              <h5 class="card-title">Diamante</h5>
+              <p class="card-text">Um alien de cristal super resistente, capaz de criar armas e escudos de diamante puro.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <div class="card card-ben">
+            <img src="imagens/ultra t.png" class="card-img-top" alt="Ultra T">
+            <div class="card-body">
+              <h5 class="card-title">Ultra T</h5>
+              <p class="card-text">Uma fusão de tecnologia alienígena e velocidade! Perfeito para hackear e correr contra o tempo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <h2 class="text-center my-5">Curiosidades</h2>
+      <ul class="list-group list-group-flush mb-5">
+        <li class="list-group-item">O Omnitrix tem mais de 1 milhão de DNA's de aliens armazenados</li>
+        <li class="list-group-item">Eu ja salvei a Terra mais de uma vez.</li>
+        <li class="list-group-item">Meu alien favorito é o "Enormossauro".</li>
+        <li class="list-group-item">Eu achei o Omnitrix quando eu tinha 10 anos</li>
+      </ul>
+    
+    </main>
+    
+
+    <footer class="container text-center py-5">
+      <h2>Entre em contato</h2>
+      <div class="mb-3">
+        <a href="mailto:benjamintennyson@gmail.com" class="link-ben">benjamintennyson@gmail.com (fictício)</a>
+      </div>
+      <p>© Copyright 2024. Produzido por Benjamin Tennyson</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+    <script>
+      const btn = document.getElementById('transformarBtn');
+      const img = document.querySelector('header img');
+    
+      btn.addEventListener('click', () => {
+        img.classList.add('transformando');
+        setTimeout(() => {
+          img.classList.remove('transformando');
+        }, 1000); // 1 segundo de transformação
+      });
+    </script>
+    <button id="scrollTopBtn" class="btn btn-success">↑ Topo</button>
+    <script>
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+
+</body>
+
+</html>
